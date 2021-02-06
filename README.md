@@ -21,3 +21,8 @@
 ### data form curl request
 1. ``` curl -X POST 'http://localhost:5000/form' --form-string 'hello=world'```
 2. in py ```x = request.form['hello']```
+
+
+### upload file with curl
+1. ```curl -X POST -F thename=@the.txt http://localhost:5000/file```
+2. in py ```file = request.files['thename'] filename=secure_filename(file.filename) ```
