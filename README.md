@@ -34,6 +34,7 @@
 
 ### some hard bash
 1. to get a specific value from curl you need to install jq first chocolatey install jq ```chocolatey install jq```
-2. example of command to get first value you can change 0 with another index  ```curl 'https://pokeapi.co/api/v2/move/47' | jq '[.[] ] | .[0]'```
+2. example of command to get first value you can change 0 with another index  
+*  ```curl 'https://pokeapi.co/api/v2/move/47' | jq '[.[] ] | .[0]'```
 
 
