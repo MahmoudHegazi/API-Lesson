@@ -11,5 +11,13 @@
 
 # CURL post example
 
+
+### Data json with post 
+
 1. ```curl -X POST 'http://localhost:5000/post' -d '{"data":"Hello World"}' -H 'Content-Type: application/json'```
 2. in __init__ ```request.get_json(force=True)```
+
+
+### data form curl request
+1. ``` curl -X POST 'http://localhost:5000/form' --form-string 'hello=world'```
+2. in py ```x = request.form['hello']```
