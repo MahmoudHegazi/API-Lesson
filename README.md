@@ -43,3 +43,6 @@
 1.  return direct value ```curl 'https://pokeapi.co/api/v2/move/47' | jq '[.["accuracy"] ][0]'```  
 2. or return all the array ``` curl 'https://pokeapi.co/api/v2/move/47' | jq '[.["accuracy"] ]'```
 
+
+### Patch
+1.  ```curl -X PATCH "http://127.0.0.1:5000/books/8" -d '{"rating":"4"}' -H 'Content-Type:application/json'```
