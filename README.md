@@ -14,8 +14,13 @@
 
 ### Data json with post 
 
-1. ```curl -X POST 'http://localhost:5000/post' -d '{"data":"Hello World"}' -H 'Content-Type: application/json'```
+1. ```curl -X POST 'http://localhost:5000/post' -d '{"data":"Hello World"}' -H 'Content-Type: application/json'``` (This not in CMD use in Gitbash)
 2. in __init__ ```request.get_json(force=True)```
+
+### data json with Post CMD
+1. ```curl localhost:5000/post --data "{\"data\": \"bar\"}" -H 'Content-Type: application/json'``` (for unkown reason after work will return error)
+2.  Even who created CMD can not solve this error "barcurl: (6) Could not resolve host: application" np use it in GitBash
+3. if not content type use ```request.get_json(force=True)```
 
 
 ### data form curl request
