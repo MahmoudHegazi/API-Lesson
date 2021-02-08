@@ -9,7 +9,7 @@
 7. very important  create_app it's not optional name it's required 
 
 
-#### CURL USED IN GITBASH for windows deal with error and check windows command below
+#### CURL USED IN GITBASH for windows CMD deal with error and check windows command below
 
 # CURL post example 
 
