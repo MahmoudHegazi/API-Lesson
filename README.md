@@ -9,7 +9,9 @@
 7. very important  create_app it's not optional name it's required 
 
 
-# CURL post example
+#### CURL USED IN GITBASH for windows deal with error and check windows command below
+
+# CURL post example 
 
 
 ### Data json with post 
@@ -49,5 +51,5 @@
 2. or return all the array ``` curl 'https://pokeapi.co/api/v2/move/47' | jq '[.["accuracy"] ]'```
 
 
-### Patch
-1.  ```curl -X PATCH "http://127.0.0.1:5000/books/8" -d '{"rating":"4"}' -H 'Content-Type:application/json'```
+### Patch Request Curl
+1.  ```curl http://127.0.0.1:5000/books/8 -X PATCH -H "Content-Type:application/json" -d '{"rating":"3"}'```
