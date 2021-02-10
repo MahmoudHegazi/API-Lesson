@@ -57,3 +57,11 @@
 
 ### Successful API test Without any problems
 1. ![api test](https://github.com/MahmoudHegazi/API-Lesson/blob/main/my_api_test.JPG?raw=true)
+
+
+### secure API from scraper and abusers
+1. if some one exceed API limit block his mac address
+```
+from getmac import get_mac_address as gma
+print(gma())
+```
