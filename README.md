@@ -65,3 +65,11 @@
 from getmac import get_mac_address as gma
 print(gma())
 ```
+
+## unit test notes
+
+1. create another Database with same tables and insert some data to make your tests
+2. in py2 use this to send json data in request the_data = json.dumps(dict(search='worngbook'))
+3. big important not if result = 0 even if True it will equal to false
+4. dont use assertTrue if u know the result is false
+5. if query will return empty list do not test it direct test the len or just add [] ```self.assertEqual(data['books'],[])``` or ```self.assertEqual(len(data['books']),0)```
