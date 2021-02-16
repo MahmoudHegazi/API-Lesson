@@ -96,18 +96,18 @@ class AppNameTestCase(unittest.TestCase):
         self.assertEqual(data['success'], False)
         self.assertEqual(data['message'], 'method not allowed')
 
-
+    # unprocessable request becuase it can not convert this to json
     def test_422_post_request(self):
-        the_data = json.dumps(dict(titele='Full Stack', author='Mahmoud', rating=5))
-        res = self.client().post('/books',json=the_data,content_type='application/json')
+        the_data = json.dumps(dict(title='Full Stack', author='Mahmoud', rating=5))
+        res = self.client().post('/books',json='',content_type='application/json')
         data = json.loads(res.data)
-        self.assertEqual(res.status_code, 400)
+        self.assertEqual(res.status_code, 422)
         self.assertEqual(data['success'], False)
-        self.assertEqual(data['message'], 'bad request')
+        self.assertEqual(data['message'], 'unprocessable')
 
 
     def test_search_book(self):
-        the_data = json.dumps(dict(search='Full Stack'))
+        the_data = json.dumps(dict(search='full stack'))
         res = self.client().post('/books',json=the_data,content_type='application/json')
         data = json.loads(res.data)
         self.assertEqual(res.status_code, 200)
