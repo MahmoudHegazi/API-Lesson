@@ -79,6 +79,9 @@ from getmac import get_mac_address as gma
 print(gma())
 ```
 
+* app idea (GET mentor ):people can get mentor throgh the app to teach them and pay for him and I take some of the payment
+* mentor can add some free courses video to promote themself
+
 ## unit test notes
 
 1. create another Database with same tables and insert some data to make your tests
