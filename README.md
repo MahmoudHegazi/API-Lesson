@@ -16,6 +16,8 @@
 
 # CURL post example 
 
+# valid post with form
+curl -d "question=who is python king&answer=mahmoud hegazi&category=python&difficulty=4" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:5000/questions
 
 ### Data json with post 
 
