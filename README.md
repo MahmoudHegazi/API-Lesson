@@ -9,6 +9,9 @@
 7. very important  create_app it's not optional name it's required 
 
 
+# notes:
+* if you saw this error sqlalchemy.exc.OperationalError  fe_sendauth: no password supplied (problem in the postgres path missing something)
+
 #### CURL USED IN GITBASH for windows CMD deal with error and check windows command below
 
 # CURL post example 
