@@ -26,6 +26,12 @@ curl -d "question=who is python king&answer=mahmoud hegazi&category=python&diffi
 ```
  curl -d '{"question":"who is python king", "answer":"mahmoud hegazi","category":"who is python king", "difficulty":"4" }' -H "Content-Type: application/json" -X POST http://localhost:5000/questions
 ```
+
+# valid post with array json random But work
+```
+ curl -d '{"previous_questions":"['hello', 'world', 'fianlly']"}' -H "Content-Type: application/json" -X POST http://localhost:5000/quizzes
+ ```
+ 
 ### Data json with post 
 
 1. ```curl -X POST 'http://localhost:5000/post' -d '{"data":"Hello World"}' -H 'Content-Type: application/json'``` (This not in CMD use in Gitbash)
