@@ -17,8 +17,15 @@
 # CURL post example 
 
 # valid post with form
-curl -d "question=who is python king&answer=mahmoud hegazi&category=python&difficulty=4" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:5000/questions
 
+```
+curl -d "question=who is python king&answer=mahmoud hegazi&category=python&difficulty=4" -H "Content-Type: application/x-www-form-urlencoded" -X POST http://localhost:5000/questions
+```
+
+# valid post with json
+```
+ curl -d '{"question":"who is python king", "answer":"mahmoud hegazi","category":"who is python king", "difficulty":"4" }' -H "Content-Type: application/json" -X POST http://localhost:5000/questions
+```
 ### Data json with post 
 
 1. ```curl -X POST 'http://localhost:5000/post' -d '{"data":"Hello World"}' -H 'Content-Type: application/json'``` (This not in CMD use in Gitbash)
