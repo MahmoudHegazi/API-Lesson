@@ -9,6 +9,12 @@
 7. very important  create_app it's not optional name it's required 
 
 
+# Advanced query to return max date in all columns:
+``` 
+bigtim = db.session.query(ciobject.id, func.max(ciobject.lastupdate).label('last_update')).first()
+bigtim.last_update
+```
+
 # notes:
 * if you saw this error sqlalchemy.exc.OperationalError  fe_sendauth: no password supplied (problem in the postgres path missing something)
 
